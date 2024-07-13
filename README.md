@@ -56,7 +56,8 @@ The Medusa Product Options Metadata Plugin extends the product options API to in
 API Endpoints
 
 These endpoints allow you to manage product options and their metadata within your Medusa project.
-List All Options for a Product
+
+### List All Options for a Product
 
 Endpoint: 
 
@@ -67,7 +68,7 @@ Description: Retrieves all options for a specified product.
 Parameters:
     productId: The ID of the product.
 
-Get a Specific Option for a Product
+### Get a Specific Option for a Product
 
     Endpoint: 
 	``` GET /admin/products/{productId}/options/{optionId} ```
