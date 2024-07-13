@@ -57,7 +57,7 @@ API Endpoints
 
 These endpoints allow you to manage product options and their metadata within your Medusa project.
 
-### List All Options for a Product
+#### List All Options for a Product
 
 Endpoint: 
 
@@ -68,23 +68,58 @@ Description: Retrieves all options for a specified product.
 Parameters:
     productId: The ID of the product.
 
-### Get a Specific Option for a Product
+#### Get a Specific Option for a Product
 
-    Endpoint: 
-	``` GET /admin/products/{productId}/options/{optionId} ```
-    Description: Retrieves a specific option for a specified product.
-    Parameters:
+Endpoint: 
+
+	GET /admin/products/{productId}/options/{optionId}
+
+Description: Retrieves a specific option for a specified product.
+
+Parameters:
+	productId: The ID of the product.
+	optionId: The ID of the product option.
+
+#### Get all Values of a Specific Option for a Product
+
+Endpoint: 
+
+	GET /admin/products/{productId}/options/{optionId}/values
+
+Description: Retrieves a specific option for a specified product.
+
+Parameters:
+	productId: The ID of the product.
+	optionId: The ID of the product option.
+
+
+
+#### Get a Specific Value of a Specific Option for a Product
+
+Endpoint: 
+
+	GET /admin/products/{productId}/options/{optionId}/values/{valueId}
+
+Description: Retrieves a specific option for a specified product.
+
+Parameters:
+	productId: The ID of the product.
+	optionId: The ID of the product option.
+	valueId: The id of the value option
+
+#### Update Metadata for a Specific Option
+
+Endpoint: 
+
+	POST /admin/products/{productId}/options/{optionId}
+
+Description: Updates the metadata for a specific option of a specified product.
+
+Parameters:
         productId: The ID of the product.
         optionId: The ID of the product option.
 
-Update Metadata for a Specific Option
-
-    Endpoint: POST /admin/products/{productId}/options/{optionId}
-    Description: Updates the metadata for a specific option of a specified product.
-    Parameters:
-        productId: The ID of the product.
-        optionId: The ID of the product option.
-    Request Body:
+Request Body:
 
     json
 
@@ -95,7 +130,31 @@ Update Metadata for a Specific Option
       }
     }
 
-Example Usage
+#### Update Metadata for a Specific Value in a Option
+
+Endpoint: 
+
+	POST /admin/products/{productId}/options/{optionId}/values/{valueId}
+
+Description: Updates the metadata for a specific option of a specified product.
+
+Parameters:
+        productId: The ID of the product.
+        optionId: The ID of the product option.
+		valueId: The id of the value option
+
+Request Body:
+
+    json
+
+    {
+      "metadata": {
+        "key": "value",
+        "anotherKey": "anotherValue"
+      }
+    }
+
+### Example Usage
 
 To update the metadata for a specific product option, send a POST request to the /admin/products/{productId}/options/{optionId} endpoint with the new metadata in the request body.
 
