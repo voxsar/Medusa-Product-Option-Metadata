@@ -213,14 +213,8 @@ To view the metadata for a specific product option, send a GET request to the /s
 
 bash
 
-	curl -X POST http://your-medusa-url/store/products/123/options/456 \
+	curl -X GET http://your-medusa-url/store/products/123/options/456 \
 	-H "Content-Type: application/json" \
-	-d '{
-	"metadata": {
-		"color": "red",
-		"size": "M"
-	}
-	}'
 
 
 ## Visit the Quickstart Guide to set up a server.
