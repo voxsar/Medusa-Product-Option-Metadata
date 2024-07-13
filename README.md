@@ -42,7 +42,7 @@ Getting Started
 
 The Medusa Product Options Metadata Plugin extends the product options API to include the ability to add metadata to options and option values. This plugin enables you to list all options of a product, manage individual options, and update their metadata.
 
-# API Endpoints
+# API Admin Endpoints
 
 These endpoints allow you to manage product options and their metadata within your Medusa project.
 
@@ -141,6 +141,58 @@ Request Body:
       }
     }
 
+# API Store Endpoints
+
+These endpoints allow you to view product options, values and their metadata within your Medusa project.
+
+#### List All Options for a Product
+
+Endpoint: 
+
+	GET /store/products/{productId}/options
+
+Description: Retrieves all options for a specified product.
+
+Parameters:
+    productId: The ID of the product.
+
+#### Get a Specific Option for a Product
+
+Endpoint: 
+
+	GET /store/products/{productId}/options/{optionId}
+
+Description: Retrieves a specific option for a specified product.
+
+Parameters:
+	productId: The ID of the product.
+	optionId: The ID of the product option.
+
+#### Get all Values of a Specific Option for a Product
+
+Endpoint: 
+
+	GET /store/products/{productId}/options/{optionId}/values
+
+Description: Retrieves a specific option for a specified product.
+
+Parameters:
+	productId: The ID of the product.
+	optionId: The ID of the product option.
+
+#### Get a Specific Value of a Specific Option for a Product
+
+Endpoint: 
+
+	GET /store/products/{productId}/options/{optionId}/values/{valueId}
+
+Description: Retrieves a specific option for a specified product.
+
+Parameters:
+	productId: The ID of the product.
+	optionId: The ID of the product option.
+	valueId: The id of the value option
+
 ### Example Usage
 
 To update the metadata for a specific product option, send a POST request to the /admin/products/{productId}/options/{optionId} endpoint with the new metadata in the request body.
@@ -148,6 +200,20 @@ To update the metadata for a specific product option, send a POST request to the
 bash
 
 	curl -X POST http://your-medusa-url/admin/products/123/options/456 \
+	-H "Content-Type: application/json" \
+	-d '{
+	"metadata": {
+		"color": "red",
+		"size": "M"
+	}
+	}'
+
+
+To view the metadata for a specific product option, send a GET request to the /store/products/{productId}/options/{optionId} endpoint with the new metadata in the request body.
+
+bash
+
+	curl -X POST http://your-medusa-url/store/products/123/options/456 \
 	-H "Content-Type: application/json" \
 	-d '{
 	"metadata": {
