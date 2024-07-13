@@ -8,7 +8,7 @@
   </a>
 </p>
 <h1 align="center">
-  Medusa Product Options Metadata Plugin
+  Medusa Product Options and Option Values Metadata Plugin
 </h1>
 <h4 align="center">
   <a href="https://docs.medusajs.com">Documentation</a> |
@@ -29,6 +29,7 @@
     <img src="https://img.shields.io/twitter/follow/medusajs.svg?label=Follow%20@medusajs" alt="Follow @medusajs" />
   </a>
 </p>
+
 ## Compatibility
 
 This plugin is compatible with versions >= 1.8.0 of @medusajs/medusa.
