@@ -59,8 +59,11 @@ These endpoints allow you to manage product options and their metadata within yo
 List All Options for a Product
 
 Endpoint: 
+
 	GET /admin/products/{productId}/options
+
 Description: Retrieves all options for a specified product.
+
 Parameters:
     productId: The ID of the product.
 
