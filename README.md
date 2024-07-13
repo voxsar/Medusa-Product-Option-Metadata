@@ -58,11 +58,11 @@ API Endpoints
 These endpoints allow you to manage product options and their metadata within your Medusa project.
 List All Options for a Product
 
-	Endpoint: 
-	``` GET /admin/products/{productId}/options ```
-    Description: Retrieves all options for a specified product.
-    Parameters:
-        productId: The ID of the product.
+Endpoint: 
+	GET /admin/products/{productId}/options
+Description: Retrieves all options for a specified product.
+Parameters:
+    productId: The ID of the product.
 
 Get a Specific Option for a Product
 
