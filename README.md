@@ -29,15 +29,15 @@
     <img src="https://img.shields.io/twitter/follow/medusajs.svg?label=Follow%20@medusajs" alt="Follow @medusajs" />
   </a>
 </p>
-Compatibility
+## Compatibility
 
 This plugin is compatible with versions >= 1.8.0 of @medusajs/medusa.
 Getting Started
 
-Visit the Quickstart Guide to set up a server.
+## Visit the Quickstart Guide to set up a server.
 
 Visit the Docs to learn more about our system requirements.
-What is Medusa
+### What is Medusa
 
 Medusa is a set of commerce modules and tools that allow you to build rich, reliable, and performant commerce applications without reinventing core commerce logic. The modules can be customized and used to build advanced ecommerce stores, marketplaces, or any product that needs foundational commerce primitives. All modules are open-source and freely available on npm.
 
@@ -46,11 +46,13 @@ Roadmap, Upgrades & Plugins
 
 You can view the planned, started and completed features in the Roadmap discussion.
 
-Follow the Upgrade Guides to keep your Medusa project up-to-date.
+## Follow the Upgrade Guides to keep your Medusa project up-to-date.
 
 Check out all available Medusa plugins.
-Medusa Product Options Metadata Plugin
-Description
+
+# Medusa Product Options Metadata Plugin
+
+## Description
 
 The Medusa Product Options Metadata Plugin extends the product options API to include the ability to add metadata to options and option values. This plugin enables you to list all options of a product, manage individual options, and update their metadata.
 API Endpoints
@@ -160,14 +162,14 @@ To update the metadata for a specific product option, send a POST request to the
 
 bash
 
-curl -X POST http://your-medusa-url/admin/products/123/options/456 \
--H "Content-Type: application/json" \
--d '{
-  "metadata": {
-    "color": "red",
-    "size": "M"
-  }
-}'
+	curl -X POST http://your-medusa-url/admin/products/123/options/456 \
+	-H "Content-Type: application/json" \
+	-d '{
+	"metadata": {
+		"color": "red",
+		"size": "M"
+	}
+	}'
 
 This setup allows for managing product options and their metadata effectively within your Medusa project.
 Community & Contributions
