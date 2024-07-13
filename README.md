@@ -13,6 +13,7 @@
 <h4 align="center">
   <a href="https://docs.medusajs.com">Documentation</a> |
   <a href="https://www.medusajs.com">Website</a>
+  <a href="https://www.linkedin.com/in/voxsar/?_l=en_US">Author</a>
 </h4>
 <p align="center">
   Building blocks for digital commerce
@@ -40,7 +41,8 @@ Getting Started
 ## Description
 
 The Medusa Product Options Metadata Plugin extends the product options API to include the ability to add metadata to options and option values. This plugin enables you to list all options of a product, manage individual options, and update their metadata.
-API Endpoints
+
+# API Endpoints
 
 These endpoints allow you to manage product options and their metadata within your Medusa project.
 
@@ -78,8 +80,6 @@ Description: Retrieves a specific option for a specified product.
 Parameters:
 	productId: The ID of the product.
 	optionId: The ID of the product option.
-
-
 
 #### Get a Specific Value of a Specific Option for a Product
 
